@@ -1,0 +1,282 @@
+%-------------------------
+% Resume in Latex
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large \scshape Luis Emilio Santos Burgoa Suchomlinow} \\ \vspace{1pt}
+    \small \textit{MS in Computational Analysis \& Public Policy Candidate} \\
+    +1 312 296 3054 $|$ \href{mailto:lsantosb@uchicago.edu} {{\underline{lsantosb@uchicago.edu}}} $|$ \href{https://https://www.linkedin.com/in/luis-santos-burgoa/}{\underline{www.linkedin.com/in/luis-santos-burgoa/}} $|$
+    Chicago, IL
+     %\href{https://github.com/namesurname}{\underline{github.com/namesurname}}
+\end{center}
+
+%-----------SUMMARY-----------
+%\section*{Summary}
+%Results-oriented and data-driven Automation Quality Engineer with a strong background in Java programming and a passion for ensuring software reliability. Experienced in designing, implementing, and executing automated test scripts to verify the functionality and performance of software applications. Proven track record of collaborating with development teams to identify and resolve issues early in the development process. Adept at utilizing testing frameworks such as JUnit and incorporating continuous integration tools like Jenkins. Skilled in creating and maintaining automated test suites for web and mobile applications. Committed to delivering high-quality software by applying industry best practices in testing and automation. Seeking opportunities to contribute technical expertise and enhance software development processes as an Automation Quality Engineer.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of Chicago}{Chicago, United States}
+      {MS in Computational Analysis \& Public Policy}{2025 - To date}
+        \vspace{1mm}
+      \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, United States}
+      {Data, Economics, and Design of Policy: Public Policy - MicroMasters}{2024- 2025}
+        \vspace{1mm}
+    \resumeSubheading
+      {University of Chicago}{Chicago, United States}
+      {Policy Analytics Credential Program}{2024}
+        \vspace{1mm}
+    \resumeSubheading
+      {Instituto Tecnológico Autónomo de México (ITAM)}{Mexico City, Mexico}
+      {Plain Language and Effective Communication Diploma}{2023}
+        \vspace{1mm}
+      \resumeSubheading
+      {Tecnológico de Monterrey}{Monterrey, Mexico}
+      {Data Science For Business Diploma}{2023}
+        \vspace{1mm} 
+    \resumeSubheading
+      {Instituto Tecnológico Autónomo de México (ITAM)}{Mexico City, Mexico}
+      {Bachelor Degree in Industrial Engineering, ABET}{2015 - 2020}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Bank of Mexico - Specialty Leader}{May 2023 -- Aug. 2025}
+      {Manager of Economic Information Systems Office}{Mexico City, Mexico}
+      \resumeItemListStart
+        \resumeItem{Supervised a team of three analysts and two interns, coordinating research and publication workflows.}
+      \resumeItem{Led coordination and governance for flagship publications including the Quarterly Inflation Report and Regional Economic Report.}
+    \resumeItem{Supported the economic research process.}
+      \resumeItem{Acted as liaison to Transparency, Compliance, Non-Financial Risks, and Internal Audit units, ensuring regulatory alignment and audit readiness.}
+      \resumeItem{Designed and implemented the editorial Style Guide adopted bank-wide for flagship reports.}
+        \resumeItem{Supported budget planning and monitoring across research divisions and regional analysis teams..}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Bank of Mexico - Information and Business Analyst}{Nov. 2019 - May 2023}
+      {Manager of Economic Information Systems Office}{Mexico City, Mexico}
+      \resumeItemListStart
+        \resumeItem{Automated editorial workflows for the Quarterly Inflation Report and Regional Economic Report, reducing processing time and manual review steps.}
+        \resumeItem{Developed non-financial risk matrix for the Directorate General of Economic Research.}
+        \resumeItem{Served as deputy liaison with Transparency, Compliance, and Internal Audit units.}
+        \resumeItem{Produced analytic inputs and visualizations for senior researchers and Governing Board briefs.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Bank of Mexico - Internship}{Feb. 2019 - Aug. 2019}
+      {Deputy Manager Compliance and Process Monitoring Office at Mexico Central Bank}{Mexico City, Mexico}
+      \resumeItemListStart
+        \resumeItem{Provided support to the compliance office and monitoring of records for relevant control activities and critical processes for the Bank.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ACCT (NGO) - Program Coordinator}{Jan. 2017 - Dec. 18}
+      {Acción Comunitaria por la Colonia Tizapán}{Mexico City, México}
+      \resumeItemListStart
+        \resumeItem{Responsible for the study plan.}
+        \resumeItem{Responsible for the hiring of teachers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Exam Officer}{Feb. 2013 - Aug. 2015}
+      {Rye School of English}{León, México}
+      \resumeItemListStart
+        \resumeItem{Responsible of managing Cambridge University international qualifications, logistics and institutional relationships for the regional venues.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:}{ Python, R, SQL, Java, MATLAB, VBA (Excel Macros)} \\
+     \textbf{Data \& ML Tools:}{ Stata, E Views, Power BI, Azure, Pentaho, GitHub} \\
+    \textbf{Workflow:}{ Latex, JIRA, MS Office Suite} \\
+    \textbf{Languages:} Spanish (Native), English (Fluent)
+    }}
+ \end{itemize}
+
+
+
+
+%-----------Academic experience-----------
+ \section{Academic Experience}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Machine Learning, Artificial Intelligence \& Big data: Expert Panel} $|$ \emph{Deutsche Bundesbank}}{Sept. 2024}
+    \resumeProjectHeading
+        {\textbf{Policy communications: innovations and good practices} $|$ \emph{Bank of England}}{Jan. 2023}
+     \resumeProjectHeading
+        {\textbf{Masterclass in Data Visualization – Virtual Training by Andy Kirk} $|$ \emph{Data Viz Training}}{June 2022}
+    \resumeProjectHeading
+        {\textbf{Seminar on Data Visualization} $|$ \emph{INEGI}}{2022}
+     \resumeProjectHeading
+        {\textbf{President, Foreign Student´s Association} $|$ \emph{ITAM}}{Jan. 2018 - Dec. 2018}
+    \resumeProjectHeading
+        {\textbf{Treasurer, Foreign Student´s Association} $|$ \emph{ITAM}}{Jan. 2017 - Dec. 2017}
+    \resumeProjectHeading
+        {\textbf{President, Economic and Social Council} $|$ \emph{ITAMMUN}}{Jan. 2017 - Aug. 2017}        
+   \resumeSubHeadingListEnd
+
+
+
+%-----------Publications-----------
+\section{Publications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Martínez, J. \& Santos Burgoa, L. “Avances y retos en la estrategia de comunicación de Banco de México: un análisis de los informes trimestrales.” Working Paper, 2023.} \\
+     \textit{2023} \\
+    }}
+
+        \small{\item{
+     \textbf{Santos Burgoa, L. "Los canales de transmisión de la política monetaria: diseño de un manual editorial y de buenas prácticas para las publicaciones en la banca central en México", Thesis, ITAM} \\
+     \textit{2023} \\
+    }}
+
+        \small{\item{
+     \textbf{Santos Burgoa, L. "El progreso desde la ingeniería", HolaMundo, Engineering and Technology Journal, v13.0} \\
+     \textit{2018} \\
+    }}
+
+ \end{itemize}
+
+
+%-----------Other-----------
+\section{Other}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Barista and coffee workshop: Mexican Coffee Association} \\
+     \textit{2024} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
